@@ -35,7 +35,8 @@ class Binomial(Distribution):
         self.p = prob
         
         # TODO: Now that you know p and n, you can calculate the mean and standard deviation
-        #       You can use the calculate_mean() and calculate_stdev() methods defined below along with the __init__ function from the Distribution class
+        #       You can use the calculate_mean() and calculate_stdev() methods defined below along with the __init__()
+        #       from the Distribution class
         Distribution.__init__(self, self.calculate_mean(), self.calculate_stdev())
         
     # TODO: write a method calculate_mean() according to the specifications below
@@ -67,11 +68,10 @@ class Binomial(Distribution):
         self.stdev = math.sqrt(self.n * self.p * (1 - self.p))
         return self.stdev
 
-    # TODO: write a replace_stats_with_data() method according to the specifications below. The read_data_file() from the Generaldistribution class can read in a data
-    # file. Because the Binomaildistribution class inherits from the Generaldistribution class,
-    # you don't need to re-write this method. However,  the method
-    # doesn't update the mean or standard deviation of
-    # a distribution. Hence you are going to write a method that calculates n, p, mean and
+    # TODO: write a replace_stats_with_data() method according to the specifications below. The read_data_file() from
+    # the Generaldistribution class can read in a data file. Because the Binomaildistribution class inherits from the
+    # Generaldistribution class, you don't need to re-write this method. However, the method doesn't update the mean
+    # or standard deviation of a distribution. Hence you are going to write a method that calculates n, p, mean and
     # standard deviation from a data set and then updates the n, p, mean and stdev attributes.
     # Assume that the data is a list of zeros and ones like [0 1 0 1 1 0 1]. 
     #
