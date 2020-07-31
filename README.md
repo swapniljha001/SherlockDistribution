@@ -16,15 +16,15 @@ Working on addition of binomial distributions with unequal probabilities.
 It installs the Python Package to the Python Installation directory, it is executed by the Python Package Manager.
 
 * `Generaldistribution.py`
-It defines a generic distribution parent class and a read_data_file() to read data.
+It defines a generic distribution parent class and a `read_data_file()` to read data.
 
 * `Gaussiandistribution.py`
-It defines the Gaussian child class and functions such as calculate_mean(), calculate_stdev(), plot_histogram(), pdf(), plot_histogram_pdf() which are used to calculate the mean, standard deviation, plot histogram, calculate the probability distribution function, and plot the histogram of the probability distribution function of the specified Gaussian distribution respectively.
+It defines the Gaussian child class and functions such as `calculate_mean()`, `calculate_stdev()`, `plot_histogram()`, `pdf()`, `plot_histogram_pdf()` which are used to calculate the mean, standard deviation, plot histogram, calculate the probability distribution function, and plot the histogram of the probability distribution function of the specified Gaussian distribution respectively.
 
 It also contains magic methods such as `__add__()` and `__repr__()` which are used to overwrite the add and represent functions of Python to be able to support the Gaussian class. 
 
 * `Binomialdistrbution.py`
-It defines the Binomial child class and functions as calculate_mean(), calculate_stdev(), replace_stats_with_data(), plot_bar(), pdf(), plot_bar_pdf() which are used to calculate the mean, standard deviation, plot bar graph, calculate the probability distribution function, and plot the bar graph of the probability distribution function of the specified Binomial distribution respectively.
+It defines the Binomial child class and functions as `calculate_mean()`, `calculate_stdev()`, `replace_stats_with_data()`, `plot_bar()`, `pdf()`, `plot_bar_pdf()` which are used to calculate the mean, standard deviation, plot bar graph, calculate the probability distribution function, and plot the bar graph of the probability distribution function of the specified Binomial distribution respectively.
 
 It also contains magic methods such as `__add__()` and `__repr__()` which are used to overwrite the add and represent functions of Python to be able to support the Binomial class.
 
